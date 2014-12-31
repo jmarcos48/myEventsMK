@@ -1,0 +1,29 @@
+<Alloy>
+	<Tab id="ClassesTab" title="Clases" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Pen.png">		
+		<Window id="classWindow" layout="vertical" backgroundColor="#FBC9BA" barColor="black" backgroundImage="/images/background/heart_pattern_pink.png">
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png">
+			</LeftNavButton>			
+			<TableView id="classTable" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" top="7" backgroundColor="white">
+				<!--<TableViewRow height="150" layout="horizontal" id="class1" dayid="1" hasChild="true" onClick="openClassDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Clase 1: “Identifica a las mujeres que te llevarán al éxito”" />											
+						<Label id="textInfo" text="Centro de Convenciones"></Label>
+						<Label id="textInfo" text="Viernes 7 de Febrero"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 09:45 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="150" layout="horizontal" id="class2" dayid="1" hasChild="true" onClick="openClassDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Clase 2: “La ruta para un maravilloso cierre de Año Seminario”" />
+						<Label id="textInfo" text="Centro de Convenciones"></Label>
+						<Label id="textInfo" text="Viernes 7 de Febrero"></Label>
+						<Label id="textInfo" text="09:45 hrs. a 10:30 hrs."></Label>
+					</View>
+				</TableViewRow>-->
+			</TableView>					
+		</Window>		
+	</Tab>
+</Alloy>

@@ -1,0 +1,61 @@
+
+".container" : {
+  
+},
+"#sessionName": {
+	font: { fontSize: 16, fontWeight:'bold'},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: Titanium.UI.SIZE
+},
+"#description": {
+	font: { fontSize: 12},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 3,
+	right: 3
+},
+"#title": {
+	font: { fontSize: 14, fontWeight:'bold'},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#place": {
+	font: { fontSize: 12},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 3,
+	right: 3
+},
+"#date": {
+	font: { fontSize: 12},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 3,
+	right: 3
+},
+"#schedule": {
+	time: { fontSize: 12},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 3,
+	right: 3
+},
+"#speakerName": {
+	font: { fontSize: 14, fontWeight:'bold'},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	top: 20,
+	left: 5
+},
+"#speakerTitle": {
+	font: { fontSize: 11},
+	color: "gray",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 5
+},
+"#rowContainer":{
+	layout:'vertical',
+	textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width: Ti.UI.FILL
+}

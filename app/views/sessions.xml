@@ -1,0 +1,555 @@
+<Alloy>
+	<Tab id="SessionsTab" title="Programa" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Notepad.png">
+		<Window id="sessionWindow" backgroundColor="#FBC9BA" barColor="black"  backgroundImage="/images/background/heart_pattern_pink.png">
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png">
+			</LeftNavButton>
+			<View id="event01Filters" layout="horizontal" height="100px" backgroundColor="gray" top="0" visible="true">
+				<Button id="buttonDay01" backgroundImage="/images/filters/day01-on.png" width="33%" height="100px" onClick="day01" />
+				<Button id="buttonDay02" backgroundImage="/images/filters/day02-off.png" width="33%" height="100px" onClick="day02" />
+				<Button id="buttonDay03" backgroundImage="/images/filters/day03-off.png" width="33%" height="100px" onClick="day03" />
+			</View>
+			<View id="event02Filters" layout="horizontal" height="100px" backgroundColor="gray" top="0" visible="false">
+				<Button id="buttonDay04" backgroundImage="/images/filters/day04-on.png" width="33%" height="100px" onClick="day04" />
+				<Button id="buttonDay05" backgroundImage="/images/filters/day05-off.png" width="33%" height="100px" onClick="day05" />
+				<Button id="buttonDay06" backgroundImage="/images/filters/day06-off.png" width="33%" height="100px" onClick="day06" />
+			</View>	
+			<TableView top="70" id="day1" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session1" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 17:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session2" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/registration-de.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Registro" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="08:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session3" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session4" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>					
+				<TableViewRow height="100" layout="horizontal" id="session5" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/CI.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Consulta y Aclaraciones de Reconocimientos" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session6" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/taller_maquillaje.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Talleres de Maquillaje con Francisco Iglesias" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 13:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session7" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/comidaespecial.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida especial para Directoras y DIQs" />
+						<Label id="textInfo" text="Salones E y F, piso 2"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="13:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session8" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Apertura" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="15:00 hrs. a 20:30 hrs."></Label>
+					</View>
+				</TableViewRow>								
+				<TableViewRow height="100" layout="horizontal" id="session9" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Domingo 13 de Julio"></Label>
+						<Label id="textInfo" text="19:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>				
+			</TableView>
+			<TableView id="day2" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" top="70" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session10" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="06:00 a 08:00 hrs./12:00 a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session11" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/registration-de.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Registro" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="07:00 hrs. a 12:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session12" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/lunch.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Desayuno" />
+						<Label id="textInfo" text="Sala A"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 09:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session13" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/vamospor6.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Desayuno especial Vamos por 6" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 09:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session14" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>													
+				<TableViewRow height="100" layout="horizontal" id="session15" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session16" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Primera Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 09:45 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session17" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Actividad para Esposos" />
+						<Label id="textInfo" text="Salón A2"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 11:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session18" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Segunda Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="09:50 hrs. a 10:35 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session19" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Tercer Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="10:40 hrs. a 11:25 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session20" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="11:30 hrs. a 13:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session21" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/lunch.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida General" />
+						<Label id="textInfo" text="Sala A"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="12:30 hrs. a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session22" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/COCTEL_REAL.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida Real" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="12:30 hrs. a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session23" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Premiación" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="15:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session24" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Lunes 14 de Julio"></Label>
+						<Label id="textInfo" text="19:30 hrs. a 20:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+			</TableView>
+			<TableView id="day3" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" top="70" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session25" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Martes 15 de Julio"></Label>
+						<Label id="textInfo" text="08:00 hrs. a 08:45 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session26" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Martes 15 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>													
+				<TableViewRow height="100" layout="horizontal" id="session27" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Martes 15 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session28" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Clausura" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Martes 15 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session29" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Martes 15 de Julio"></Label>
+						<Label id="textInfo" text="12:00 hrs. a 13:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+			</TableView>
+			
+			<!-- SEMINARIO ZAFIRO RUBI -->
+			<TableView top="70" id="day4" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session30" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 17:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session31" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/registration-de.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Registro" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="08:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session32" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session33" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>					
+				<TableViewRow height="100" layout="horizontal" id="session34" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/CI.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Consulta y Aclaraciones de Reconocimientos" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session35" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/taller_maquillaje.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Talleres de Maquillaje con Francisco Iglesias" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 13:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session36" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/comidaespecial.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida especial para Directoras y DIQs" />
+						<Label id="textInfo" text="Salones E y F, piso 2"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="12:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session37" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Apertura" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="14:30 hrs. a 20:30 hrs."></Label>
+					</View>
+				</TableViewRow>								
+				<TableViewRow height="100" layout="horizontal" id="session38" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Miércoles 16 de Julio"></Label>
+						<Label id="textInfo" text="19:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>				
+			</TableView>
+			<TableView id="day5" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" top="70" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session39" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="06:00 a 08:00 hrs./12:00 a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session40" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/registration-de.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Registro" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="07:00 hrs. a 12:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session41" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/lunch.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Desayuno" />
+						<Label id="textInfo" text="Sala A"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 09:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session42" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/vamospor6.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Desayuno especial Vamos por 6" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 09:00 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session43" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="07:30 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>													
+				<TableViewRow height="100" layout="horizontal" id="session44" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session45" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Primera Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 09:45 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session46" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Actividad para Esposos" />
+						<Label id="textInfo" text="Salón A2"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="09:30 hrs. a 11:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session47" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Segunda Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="09:50 hrs. a 10:35 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session48" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/class.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Tercer Clase" />
+						<Label id="textInfo" text="Ver sección de Mis Clases"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="10:40 hrs. a 11:25 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session49" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="11:30 hrs. a 13:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session50" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/lunch.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida General" />
+						<Label id="textInfo" text="Sala A"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="12:30 hrs. a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session51" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/COCTEL_REAL.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Comida Real" />
+						<Label id="textInfo" text="Sala C"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="12:30 hrs. a 14:30 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session52" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Premiación" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="15:00 hrs. a 20:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session53" dayid="2" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Jueves 17 de Julio"></Label>
+						<Label id="textInfo" text="19:30 hrs. a 20:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+			</TableView>
+			<TableView id="day6" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" visible="false" top="70" backgroundColor="white">
+				<TableViewRow height="100" layout="horizontal" id="session54" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Transportación de Hoteles sede a Expo Bancomer" />
+						<Label id="textInfo" text="Lobby del hotel"></Label>
+						<Label id="textInfo" text="Viernes 18 de Julio"></Label>
+						<Label id="textInfo" text="08:00 hrs. a 08:45 hrs."></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="100" layout="horizontal" id="session55" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/information-icon.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Módulo de Información" />
+						<Label id="textInfo" text="Vestíbulo de Expo Bancomer"></Label>
+						<Label id="textInfo" text="Viernes 18 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>													
+				<TableViewRow height="100" layout="horizontal" id="session56" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/expo-icon.jpg" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Expo Mary Kay" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Viernes 18 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session57" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/generalsession.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Asamblea de Clausura" />
+						<Label id="textInfo" text="Sala B"></Label>
+						<Label id="textInfo" text="Viernes 18 de Julio"></Label>
+						<Label id="textInfo" text="09:00 hrs. a 12:30 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="session58" dayid="3" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/transportation.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Trasportación de Expo Bancomer a Hoteles sede" />
+						<Label id="textInfo" text="Sala B, planta baja"></Label>
+						<Label id="textInfo" text="Viernes 18 de Julio"></Label>
+						<Label id="textInfo" text="12:00 hrs. a 13:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+			</TableView>									
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,22 @@
+<Alloy>
+	<Tab id="OptionsTab" title="Más opciones" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Bar-Chart.png" badge="3">
+		<Window id="optionsWindow" backgroundColor="#FBC9BA" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK" layout="vertical" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK">			
+			<TableView id="optionsTable" borderRadius="6" height="Titanium.UI.SIZE" borderColor="gray" width="85%" top="7">
+				<TableViewSection id="socialnetworksTable">
+					<TableViewRow layout="horizontal" hasChild="true" id="TWITTER">
+						<ImageView image="/images/toolbal/Cloud.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Redes Sociales"></Label>
+					</TableViewRow>					
+					<TableViewRow layout="horizontal" hasChild="true" id="TWITTER">
+						<ImageView image="/images/toolbal/Invitation.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Inbox"></Label>
+					</TableViewRow>
+					<TableViewRow layout="horizontal" hasChild="true">
+						<ImageView image="/images/toolbar/Settings.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Ajustes"></Label>
+					</TableViewRow>				
+				</TableViewSection>				
+			</TableView>						
+		</Window>
+	</Tab>
+</Alloy>

@@ -1,0 +1,10 @@
+<Alloy>
+	<Tab id="surveyTab" title="Encuesta" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Bar-Chart.png">
+		<Window id="surveyWindow" backgroundColor="#FBC9BA" barColor="black" layout="vertical" >
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png">
+			</LeftNavButton>
+			<WebView id="webview" />
+		</Window>
+	</Tab>
+</Alloy>

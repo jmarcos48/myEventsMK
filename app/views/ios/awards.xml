@@ -1,0 +1,12 @@
+<Alloy>
+	<Tab id="AwardsTab" title="Reconocimientos" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Award.png">
+		<Window id="socialWindow" backgroundColor="#FBC9BA" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK" barColor="black" layout="vertical"  backgroundImage="/images/background/heart_pattern_pink.png">			
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png" />
+			</LeftNavButton>			
+			<TableView id="awardsTable" borderRadius="6" borderColor="gray" width="95%" top="7" scrollable="true">
+						
+			</TableView>						
+		</Window>
+	</Tab>
+</Alloy>

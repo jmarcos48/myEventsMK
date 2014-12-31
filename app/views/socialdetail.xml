@@ -1,0 +1,5 @@
+<Alloy>
+    <Window id="socialDetailWindow" title="Redes Sociales" backButtonTitle="Regresar" layout="vertical" backgroundColor="#FBC9BA" barColor="black">
+        <WebView id="webview" />
+    </Window>
+</Alloy>

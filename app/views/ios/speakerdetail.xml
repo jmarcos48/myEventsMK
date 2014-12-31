@@ -1,0 +1,17 @@
+<Alloy>
+	<Window class="container" id="speakerDetailWindow" title="Detalle de Maestra" backButtonTitle="" layout="vertical" backgroundColor="#FBC9BA" barColor="black" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK" backgroundImage="/images/background/heart_pattern_pink.png">
+		<View id="sessionDetailHeader" layout="horizontal" height="Titanium.UI.SIZE" backgroundColor="white">
+			<ImageView id="imageURL" image="" width="200px"/>
+			<Label id="sessionName" text=""></Label>
+		</View>
+		<View id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" height="Titanium.UI.SIZE" layout="vertical" top="10">
+			<Label id="description" text="" class="description"></Label>
+		</View>
+		
+		<Label id="title" text="Curriculum" top="15"></Label>
+		<ScrollView id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" layout="vertical" top="1" scrollingEnabled="true">
+			<Label id="place" text=""></Label>		
+		</ScrollView>		
+				
+	</Window>
+</Alloy>

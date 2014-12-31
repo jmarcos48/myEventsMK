@@ -1,0 +1,10 @@
+<Alloy>
+    <TabGroup tabsBackgroundColor="black" activeTabIconTint="#FBC9BA" tabsTintColor="#FBC9BA" tintColor="#FBC9BA" barColor="black">
+		<Require src="sessions"></Require>
+		<Require src="classes"></Require>
+		<Require src="awards"></Require>
+		<Require src="speakers"></Require>
+        <Require src="social"></Require>
+        <Require src="survey"></Require>
+    </TabGroup>
+</Alloy>

@@ -1,0 +1,22 @@
+
+".container" : {
+  
+},
+"#sessionName": {
+	font: { fontSize: 14, fontWeight:'bold'},
+	color: "black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	top: 10,
+	left: 5
+},
+"#textInfo": {
+	font: { fontSize: 11},
+	color: "gray",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 5
+},
+"#rowContainer":{
+	layout:'vertical',
+	textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT,
+	width: Ti.UI.FILL
+}

@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="loginWindow" class="container" backgroundImage="/images/login/login.png">		
+		<View>			
+			<TextField id="userName" borderStyle="Titanium.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Escribe aquí tu número de Consultora" width="Titanium.UI.SIZE" bottom="80"></TextField>
+			<TextField id="userPassword"  borderStyle="Titanium.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Escribe aquí tu contraseña" passwordMask="true" width="Titanium.UI.SIZE" bottom="40"></TextField>			
+			<Button id="login" onClick="login" title="Entrar" bottom="0"></Button>
+		</View>			
+	</Window>
+</Alloy>

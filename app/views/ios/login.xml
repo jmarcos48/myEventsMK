@@ -1,0 +1,19 @@
+<Alloy>
+	<NavigationWindow id="navGroupWin">
+		<Window id="loginWindow" class="container" backgroundImage="/images/login/login.png" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK">		
+			<View>			
+				<TextField id="userName" borderStyle="Titanium.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Escribe aquí tu número de Consultora" width="Titanium.UI.SIZE" bottom="80"></TextField>
+				<TextField id="userPassword"  borderStyle="Titanium.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Escribe aquí tu contraseña" passwordMask="true" width="Titanium.UI.SIZE" bottom="50"></TextField>
+				<!--<Label title="Entrar" color="red" onClick="login" bottom="80"></Label>
+				<Label title="Acerca de" bottom="10" right="0" color="#FBC9BA" onClick="about"></Label>-->	
+				<Toolbar bottom="0">
+					<Items>
+						<Button id="about" title="Acerca de" onClick="about"/>
+						<FlexSpace/>						
+						<Button id="add" title="Entrar" onClick="login"/>
+					</Items>
+				</Toolbar>		
+			</View>			
+		</Window>
+	</NavigationWindow>
+</Alloy>

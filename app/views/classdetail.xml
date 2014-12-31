@@ -1,0 +1,28 @@
+<Alloy>
+	<Window class="container" id="classDetailWindow" title="Detalle de Clase" backButtonTitle="" layout="vertical" backgroundColor="#FBC9BA" barColor="black"  backgroundImage="/images/background/heart_pattern_pink.png">
+		<View id="classDetailHeader" layout="horizontal" height="Titanium.UI.SIZE" backgroundColor="white">
+			<ImageView id="imageURL" image="" width="200px"/>
+			<Label id="sessionName" text=""></Label>
+		</View>
+		<View id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" height="Titanium.UI.SIZE" layout="vertical" top="10">
+			<Label id="description" text="" class="description"></Label>
+		</View>
+		
+		<Label id="title" text="LUGAR Y FECHA" top="15"></Label>
+		<View id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" height="Titanium.UI.SIZE" layout="vertical" top="1">
+			<Label id="place" text=""></Label>
+			<Label id="date" text=""></Label>
+			<Label id="schedule" text=""></Label>			
+		</View>	
+		
+		<!--<Label id="title" text="MAESTRA" top="15"></Label>		
+		<View backgroundColor="white" width="85%" borderColor="black" borderRadius="6" layout="horizontal" top="1" id="speaker1" height="80">
+			<ImageView id="speakerPhoto" width="100px" left="10" top="0"/>
+			<View id="rowContainer">
+				<Label id="speakerName" />
+				<Label id="speakerTitle"></Label>
+			</View>
+		</View>		
+	-->
+	</Window>
+</Alloy>

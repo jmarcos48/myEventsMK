@@ -1,0 +1,33 @@
+<Alloy>
+	<Tab id="SocialTab" title="Redes Sociales" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Cloud.png">
+		<Window id="socialWindow" backgroundColor="#FBC9BA" barColor="black" layout="vertical" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK" backgroundImage="/images/background/heart_pattern_pink.png" >			
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png">
+			</LeftNavButton>			
+			<TableView id="socialTable" borderRadius="6" height="Titanium.UI.SIZE" borderColor="gray" width="95%" top="7">
+				<TableViewSection id="socialnetworksTable">
+					<TableViewRow layout="horizontal" hasChild="true" id="FACEBOOK" onClick="openSocialWeb">
+						<ImageView image="/images/social/facebook.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Facebook"></Label>
+					</TableViewRow>
+					<TableViewRow layout="horizontal" hasChild="true" id="TWITTER" onClick="openSocialWeb">
+						<ImageView image="/images/social/twitter.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Twitter"></Label>
+					</TableViewRow>
+					<TableViewRow layout="horizontal" hasChild="true" id="YOUTUBE" onClick="openSocialWeb">
+						<ImageView image="/images/social/youtube.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Youtube"></Label>
+					</TableViewRow>	
+					<TableViewRow layout="horizontal" hasChild="true" id="INSTAGRAM" onClick="openSocialWeb">
+						<ImageView image="/images/social/instagram.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Instagram"></Label>
+					</TableViewRow>
+					<TableViewRow layout="horizontal" hasChild="true" id="CORPORATE" onClick="openSocialWeb">
+						<ImageView image="/images/toolbar/heart_pink.png" width="20" height="20" left="5" top="5" bottom="5" right="5"></ImageView>
+						<Label text="Sitio Mary Kay"></Label>
+					</TableViewRow>					
+				</TableViewSection>				
+			</TableView>						
+		</Window>
+	</Tab>
+</Alloy>

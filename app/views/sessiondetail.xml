@@ -1,0 +1,18 @@
+<Alloy>
+	<Window class="container" id="sessionDetailWindow" title="Detalle de Programa" backButtonTitle="" layout="vertical" backgroundColor="#FBC9BA" barColor="black" backgroundImage="/images/background/heart_pattern_pink.png" >
+		<View id="sessionDetailHeader" layout="horizontal" height="Titanium.UI.SIZE" backgroundColor="white">
+			<ImageView id="imageURL" image="" width="100" />
+			<Label id="sessionName" text=""></Label>
+		</View>
+		<View id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" height="Titanium.UI.SIZE" layout="vertical" top="10">
+			<Label id="description" text="" class="description"></Label>
+		</View>
+		
+		<Label id="title" text="LUGAR Y FECHA" top="15"></Label>
+		<View id="detail" backgroundColor="white" width="85%" borderColor="black" borderRadius="6" height="Titanium.UI.SIZE" layout="vertical" top="1">
+			<Label id="place" text=""></Label>
+			<Label id="date" text=""></Label>
+			<Label id="schedule" text=""></Label>			
+		</View>
+	</Window>	
+</Alloy>

@@ -1,0 +1,172 @@
+<Alloy>
+	<Tab id="SpeakersTab" title="Maestras" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Follow.png">
+		<Window id="speakersWindow" barColor="black" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK" backgroundImage="/images/background/heart_pattern_pink.png">
+			<LeftNavButton>
+		        <Button backgroundImage="/images/toolbar/leftNavButton.png">
+			</LeftNavButton>			
+			<TableView id="speakersTable" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" top="7">
+			<!--	<TableViewRow  height="90"   layout="horizontal" id="speaker1" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker1.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Beatriz Lozano de Llaca" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow  height="90"  layout="horizontal" id="speaker2" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker2.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Laura Valdes de Perry" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow  height="90"  layout="horizontal" id="speaker3" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker3.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Rocío A. Hernandez de la Fuente" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="90"  layout="horizontal" id="speaker4" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker4.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Sonia Munguía Ceballos" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>		
+				<TableViewRow height="90"  layout="horizontal" id="speaker5" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker5.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Alejandra del Rocío Becerra González" />
+						<Label id="textInfo" text="Directora Nacional Ejecutiva de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker6" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker6.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Aydé González de Martínez" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker7" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker7.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Elizabeth Ojeda Bustamante" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker8" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker8.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Guadalupe Castro Mendoza, Pipis" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker9" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker9.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Julieta Ruiz de Rivera" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker10" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker10.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Laura DeGivez Camacho" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker11" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker11.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Lilia Lazareno de Cuevas" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="90"  layout="horizontal" id="speaker12" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker12.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Luz Ma. Almaraz de García" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="90"  layout="horizontal" id="speaker13" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker13.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Ma. Isabel González González" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="90"  layout="horizontal" id="speaker14" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker14.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Maricela Becerra de Meza" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker15" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker15.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Maricela Leal de Dávila" />
+						<Label id="textInfo" text="Directora Nacional Ejecutiva de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker16" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker16.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Ma. Trinidad Rubio de Villegas “Paloma”" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>	
+				<TableViewRow height="90"  layout="horizontal" id="speaker17" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker17.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Mireya Aurora Fernández de Narváez" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker18" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker18.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Patricia Leyva de Medina" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker19" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker19.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Patricia Rivera Noriega" />
+						<Label id="textInfo" text="Directora Nacional Ejecutiva de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker20" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker20.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Paulina Leticia Márquez de Islas" />
+						<Label id="textInfo" text="Directora Nacional Ejecutiva de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker21" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker21.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Rosa Irma Gordillo de Esquivel" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker22" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker22.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Sandra Tamayo de Islas" />
+						<Label id="textInfo" text="Directora Nacional de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="90"  layout="horizontal" id="speaker23" dayid="1" hasChild="true" onClick="openSpeakerDetail">
+					<ImageView id="image" image="/images/speakers/speaker23.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Yazmine Alfaro Fattel" />
+						<Label id="textInfo" text="Directora Nacional Senior de Ventas Independiente"></Label>
+					</View>
+				</TableViewRow>-->
+			</TableView>									
+		</Window>
+	</Tab>
+</Alloy>

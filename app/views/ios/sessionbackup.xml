@@ -1,0 +1,35 @@
+<Alloy>
+	<Tab id="SessionsTab" title="Programa" tintColor="#FBC9BA" backgroundColor="black" icon="images/toolbar/Notepad.png">
+		<Window id="sessionWindow" layout="vertical" backgroundColor="#FBC9BA" barColor="black" statusBarStyle="Titanium.UI.iPhone.StatusBar.OPAQUE_BLACK">
+			<View layout="horizontal" height="100px" backgroundColor="white" >
+				<Button id="buttonDay01" backgroundImage="/images/toolbars/sessions/day01_on.png" width="33%" height="100px" />
+				<Button id="buttonDay02" backgroundImage="/images/toolbars/sessions/day02_off.png" width="33%" height="100px" />
+				<Button id="buttonDay03" backgroundImage="/images/toolbars/sessions/day03_off.png" width="33%" height="100px" />
+			</View>
+			<TableView filterAttribute="dayid" height="Titanium.UI.SIZE" width="95%" borderRadius="6" borderColor="gray" top="7">
+				<TableViewRow height="100" layout="horizontal" id="sessionday01" dayid="1" hasChild="true" onClick="openSessionDetail">
+					<ImageView id="image" image="/images/sessions/registration.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Registro" />
+						<Label id="textInfo" text="Lobby de Forum, Mundo Imperial"></Label>
+						<Label id="textInfo" text="Miércoles 5 de Febrero"></Label>
+						<Label id="textInfo" text="16:00 hrs. a 19:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+				<TableViewRow height="100" layout="horizontal" id="sessionday01" dayid="1">
+					<ImageView id="image" image="/images/sessions/directorsuite.png" width="100px" left="10" />
+					<View id="rowContainer">
+						<Label id="sessionName" text="Prueba de Traje de Directora" />
+						<Label id="textInfo" text="Pendiente definir el lugar"></Label>
+						<Label id="textInfo" text="Miércoles 5 de Febrero"></Label>
+						<Label id="textInfo" text="16:00 hrs. a 19:00 hrs."></Label>
+					</View>
+				</TableViewRow>
+			</TableView>			
+			
+			<Button id="sessionDetailButton" onClick="openSessionDetail" title="Open Detail" bottom="0"></Button>
+			
+			
+		</Window>
+	</Tab>
+</Alloy>
